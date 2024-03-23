@@ -1,0 +1,244 @@
+.place-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: black;
+}
+.place-img {
+  background: black;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.place-img img {
+  object-position: top;
+}
+.name-loc {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: absolute;
+  top: 80vh;
+  left: 10%;
+  z-index: 11;
+}
+.name-loc h2 {
+  font-weight: 500;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 1);
+}
+.locatn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.name-loc p {
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.77);
+}
+.name-loc span {
+  color: white;
+}
+.place-img::before {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+}
+.read-or-hide {
+  cursor: pointer;
+}
+.importance {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  width: 90%;
+  border-radius: 20px;
+}
+.top {
+  padding-top: 20px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.top img {
+  width: 25px;
+  height: 25px;
+}
+.top h4 {
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 15px;
+  line-height: 30px;
+}
+.importance p {
+  font-size: 17px;
+  font-weight: 500;
+  text-align: start;
+  padding: 20px 30px 30px 70px;
+}
+.about-monument {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: start;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 90%;
+  border-bottom: 2px solid rgba(91, 91, 91, 1);
+}
+.about-monument h4 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 1);
+  padding-bottom: 20px;
+}
+.about-monument p {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 1);
+}
+.arch-imp {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  border-radius: 20px;
+  border: 2px solid rgba(91, 91, 91, 1);
+  text-align: left;
+}
+.arch-imp h4 {
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-left: 50px;
+  line-height: 30px;
+}
+.arch-imp p {
+  font-size: 17px;
+  font-weight: 500;
+  text-align: start;
+  padding: 20px 30px 30px 50px;
+}
+.gallery {
+  text-align: left;
+  width: 90%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.gallery h4 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 1);
+  padding-bottom: 20px;
+}
+.all-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+  /* grid-auto-rows: minmax(100px, auto); */
+  /* grid-template-columns: 1fr 1.5fr 1fr; */
+  /* grid-template-rows: auto auto 1fr 1fr 1fr auto auto; */
+  padding-top: 30px;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 20px;
+  /* grid-auto-rows: minmax(50px, auto); */
+}
+.gallery-images {
+  border-radius: 3px;
+  overflow: hidden;
+}
+.gallery-images img {
+  height: 50vh;
+  object-fit: cover;
+  display: block;
+}
+.gallery-images video {
+  height: 40vh;
+  object-fit: cover;
+}
+.gallery-title {
+  width: 100%;
+  height: 50px;
+  font-size: 10px;
+  background-color: rgb(33, 31, 31);
+  color: white;
+  padding: 10px;
+}
+.titles {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.verify {
+  z-index: 9999;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+}
+/* .verify-btn-div{
+  padding-bottom: 10px;
+  padding-top: 50px;
+} */
+/* .verify-btn{
+  background-color: rgb(71, 71, 185);
+  color: white;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+} */
+/* .map-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: black;
+    height: 80vh;
+    position: relative;
+}
+.map{
+    width: 80%;
+    height: 400px;
+    background: white;
+    position: absolute;
+    z-index: 11;
+}
+*/
+
+@media (max-width: 760px) {
+  .name-loc {
+    top: 60vh;
+    left: 10%;
+    z-index: 11;
+  }
+  .name-loc h2 {
+    font-size: 30px;
+  }
+  .name-loc p {
+    font-size: 18px;
+  }
+  .name-loc i {
+    padding-right: 10px;
+  }
+}

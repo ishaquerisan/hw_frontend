@@ -1,0 +1,121 @@
+.container {
+  margin-inline: var(--containerMargin);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+.btn {
+  background-color: rgb(43, 55, 181);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  font-size: 1.01rem;
+  cursor: pointer;
+  transition: background-color 0.1s linear;
+}
+
+.btn:hover {
+  background-color: rgb(17, 27, 140);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-block: 20px;
+}
+
+.topbar .main-head {
+  font-weight: 500;
+  font-size: 25px;
+  color: var(--darkGrey);
+}
+
+.table {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  margin-bottom: 50px;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table table thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.table table thead th {
+  background-color: rgb(246, 246, 246);
+  border: none;
+  color: rgb(91, 91, 91);
+  font-weight: 500;
+  text-align: start;
+}
+
+.table table thead .table table thead th:last-child {
+  text-align: center;
+}
+
+.table table td,
+.table table th {
+  padding: 10px 10px;
+}
+
+.table table tbody tr:nth-child(odd) {
+  border-block: 1px solid rgb(205, 205, 205);
+}
+
+.tool {
+  font-size: 25px;
+  cursor: pointer;
+  color: black;
+}
+.tool.del:hover {
+  color: rgb(210, 20, 20);
+}
+.tool.edit:hover,
+.tool.gal:hover {
+  color: rgb(43, 55, 181);
+}
+
+.icons .tool-con {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.YES {
+  color: rgb(12, 139, 5);
+  margin-bottom: 10px;
+}
+.NO {
+  color: rgb(183, 34, 34);
+  margin-bottom: 10px;
+}
+
+.dataAlign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dataAlign .btn {
+  width: fit-content;
+  height: fit-content;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  padding: 10px;
+}
